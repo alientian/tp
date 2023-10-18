@@ -53,4 +53,12 @@ public class Messages {
         company.getTags().forEach(builder::append);
         return builder.toString();
     }
+
+    /**
+     * Formats the {@code company} to only display the company's name to the user
+     * with the left UI panel for viewing the company details.
+     */
+    public static String getCompanyName(Company company) {
+        return company.getName().toString();
+    }
 }
