@@ -24,7 +24,7 @@ public class RemarkCommand extends Command {
             + "by the index number used in the displayed company list. "
             + "Existing remark will be overwritten by the input.\n"
             + "Parameters: INDEX (must be a positive integer) "
-            + PREFIX_REMARK + "[REMARK]\n"
+            + PREFIX_REMARK + "REMARK\n"
             + "Example: " + COMMAND_WORD + " 1 "
             + PREFIX_REMARK + "Likes to swim.";
     public static final String MESSAGE_REMOVE_USAGE = REMOVE_COMMAND_WORD
@@ -32,7 +32,8 @@ public class RemarkCommand extends Command {
             + "Parameters: INDEX (must be a positive integer)\n"
             + "Example: " + COMMAND_WORD + " 1";
 
-    public static final String MESSAGE_NO_REMARK = "Remarks missing in entry.";
+    public static final String MESSAGE_NO_REMARK = "Oops! No remarks is entered. "
+            + "Use " + PREFIX_REMARK + "REMARK to add remark. Please try again!";
     public static final String MESSAGE_ADD_REMARK_SUCCESS = "Added remark to Company: %1$s";
     public static final String MESSAGE_DELETE_REMARK_SUCCESS = "Removed remark from Company: %1$s";
 
